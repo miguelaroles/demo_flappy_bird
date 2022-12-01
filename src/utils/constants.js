@@ -1,0 +1,10 @@
+export const BIRD_SIZE = 30;
+export const GAME_HEIGHT = 650;
+export const GAME_WIDTH = 320;
+export const GRAVITY = 6;
+export const LIFT = 100;
+export const BASE =  80;
+export const PIPE_WIDTH = 48;
+export const PIPE_GAP = 200;
+export const PIPE_HEIGHT = 300;
+export const PIPE_VELOCITY = 3;

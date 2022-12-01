@@ -1,5 +1,5 @@
-import GameContainer from "./Containers/GameContainer";
-import AuthProvider from "./Contexts/AuthContext";
+import GameContainer from "../Game/GameContainer";
+import AuthProvider from "../../Contexts/AuthContext";
 
 const App = () => {
   return (

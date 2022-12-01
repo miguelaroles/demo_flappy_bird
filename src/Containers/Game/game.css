@@ -1,0 +1,65 @@
+.game-wrapper {
+    height: 100vh;
+    width: 100vh;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.game-container {
+    background-color: rgba(0,0,0,0.05);
+    background-image: url("../../sprites/background-day.png");
+    background-size: contain;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.score {
+    position: absolute;
+    z-index: 1000;
+    left: calc(50% - 2em);
+    top: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.score > * {
+    display: inline-flex;
+}
+
+.game-over {
+    z-index: 999;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.base {
+    background-position: left 0;
+    animation: slide 0.22s linear infinite;
+}
+
+.score-title {
+    display: block;
+    font-size: 1em;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-right: 0.5em;
+    text-transform: capitalize;
+    position: relative;
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-50px);
+    }
+}
